@@ -1,4 +1,5 @@
 <html>
+<<<<<<< HEAD
     <body>
         <script src="https://integracion-actividad-3.herokuapp.com/trucks/socket.io.js"></script>
         <script>
@@ -12,3 +13,15 @@
     </body>
 </html>
 
+=======
+    <body>     
+        <script src="https://integracion-actividad-3.herokuapp.com/trucks/socket.io.js"></script>
+        <script>
+        var socket = io("https://integracion-actividad-3.herokuapp.com", { path: "trucks" });
+        socket.on('POSITION', function(msg){
+                console.log('CAMION ' + msg.code + ' posicion: ' + msg.position[0] + ',' + msg.position[1]);
+            });
+        </script>
+    </body>
+</html>
+>>>>>>> 2afc80a4e43e422d6c904a982ca5f9f36b923704
